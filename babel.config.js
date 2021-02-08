@@ -17,4 +17,15 @@ module.exports = {
       // }
     }],
   ],
+  plugins: [
+    // [
+    //   'module-resolver',
+    //   {
+    //     alias: {
+    //       '@tarojs/components': '@tarojs/components-rn',
+    //       '@tarojs/taro': '@tarojs/taro-rn',
+    //     },
+    //   },
+    // ]
+  ]
 }
