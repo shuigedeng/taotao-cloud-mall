@@ -12,15 +12,28 @@ declare module "*.mp4";
 
 declare namespace NodeJS {
   interface ProcessEnv {
-    TARO_ENV: 'weapp' | 'swan' | 'alipay' | 'h5' | 'rn' | 'tt' | 'quickapp' | 'qq' | 'jd'
+    TARO_ENV:
+      | "weapp"
+      | "swan"
+      | "alipay"
+      | "h5"
+      | "rn"
+      | "tt"
+      | "quickapp"
+      | "qq"
+      | "jd";
   }
 }
+
+declare const IS_H5: boolean;
+declare const IS_WEAPP: boolean;
+declare const IS_RN: boolean;
 
 //global全局数据声明
 export interface Global {
   //是否为开发环境
-  debug:boolean;
-  console:any;
+  debug: boolean;
+  console: any;
   /*****设备相关信息*******/
   iphoneX: boolean;
   SDKVersion: any;
@@ -37,7 +50,3 @@ export interface Global {
   version: any;
   windowHeight: number;
 }
-
-declare const IS_H5: any;
-declare const IS_WEAPP: any;
-declare const IS_RN: any;

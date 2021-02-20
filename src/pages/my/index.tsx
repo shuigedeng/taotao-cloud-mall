@@ -15,10 +15,10 @@ import "./index.less";
 import React from "react";
 
 export default class Index extends Component {
-  config = {
-    addGlobalClass: true,
-    navigationBarTitleText: "首页"
-  };
+  // config = {
+  //   addGlobalClass: true,
+  //   navigationBarTitleText: "首页"
+  // };
 
   state = {
     list1: JsonData.goodsList,
